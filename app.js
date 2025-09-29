@@ -8,7 +8,7 @@ const ALLOWED_ORIGINS = [
   'http://localhost:8000',
   'http://localhost:3000',
   'http://localhost:3001',
-  'https://wk-8-clinic-booking-frontend.vercel.app/' // Production URL if needed
+  'https://wk-8-clinic-booking-frontend.vercel.app' // Production URL if needed
 ];
 const PORT = process.env.PORT || 3000;
 
