@@ -10,6 +10,10 @@ sequelize.sync();
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('[Home Page] Clinic booking API running');
+}); 
+
 app.use('/api/doctors', require('./routes/doctorRoutes'));
 app.use('/api/patients', require('./routes/patientRoutes'));
 app.use('/api/appointments', require('./routes/appointmentRoutes'));
